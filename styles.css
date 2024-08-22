@@ -77,7 +77,12 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('hero-image.jpg') no-repeat center center/cover;
+    background: none;
+    background-image: url('https://raw.githubusercontent.com/jpcardozx/personal-portfolio/main/assets/DALL%C2%B7E%202024-08-22%2011.42.23%20-%20Design%20a%20visually%20striking%20background%20image%20for%20the%20hero%20section%20of%20a%20cutting-edge%20frontend%20developer\'s%20portfolio%20website.%20The%20image%20embodies%20a%20modern.webp');
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o contêiner */
+    background-position: center; /* Alinha a imagem ao centro do contêiner */
+    background-color: transparent; /* Garante que não haja sobreposição de cor */
     height: 100vh;
     display: flex;
     align-items: center;
