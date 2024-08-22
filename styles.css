@@ -324,7 +324,9 @@ body {
 }
 
 .project-info, .quick-build-info {
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-info h3, .quick-build-info h3, .skill-card h3 {
@@ -337,7 +339,7 @@ body {
 
 .project-info p, .quick-build-info p {
     font-size: 1.125rem;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
     color: var(--dark-color);
     animation: fadeInText 2s ease forwards;
 }
