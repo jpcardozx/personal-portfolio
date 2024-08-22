@@ -1,43 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>Personal Portfolio | Frontstack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&family=Poppins:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>@jpcardozx | Frontend Developer</title>
 </head>
 
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">MinhaLogo</a>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">@jpcardozx</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bem-vindo ao Nosso Site</h1>
-            <p>Oferecemos as melhores soluções para você.</p>
-            <a href="#services" class="btn">Nossos Serviços</a>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building <span class="highlight">Digital Masterpieces</span> That Drive Success</h1>
+                <p>I'm João Pedro (@jpcardozx), a frontend developer committed to crafting digital solutions that not only look stunning but also deliver measurable results. Let’s transform your vision into a reality that engages and converts.</p>
+                <a href="#projects" class="btn">Discover My Work</a>
+            </div>
         </div>
     </section>
 
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With a foundation in law and a passion for technology, I transitioned from solving legal challenges to creating seamless digital experiences. My journey is defined by a commitment to excellence and a deep understanding of both the technical and creative aspects of web development. I specialize in building responsive, user-centric websites that not only meet client needs but exceed expectations. Let's collaborate to create something truly remarkable.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML &amp; CSS</h3>
+                    <p>Expert in translating designs into clean, efficient, and responsive code, ensuring your site is accessible and visually captivating on any device.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Turning static pages into dynamic user experiences. My code brings your ideas to life, making your website more interactive and engaging.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing with the user in mind. I focus on creating interfaces that are intuitive, enjoyable, and optimized for the best user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-list">
+                <article class="project-card">
+                    <img src="project1-thumbnail.jpg" alt="Responsive Landing Page">
+                    <div class="project-info">
+                        <h3>Responsive Landing Page</h3>
+                        <p>Designed and developed a high-converting landing page optimized for mobile users. The project involved creating a seamless user experience that drives engagement and conversions.</p>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="project2-thumbnail.jpg" alt="API Integration Dashboard">
+                    <div class="project-info">
+                        <h3>API Integration Dashboard</h3>
+                        <p>This project showcases my ability to integrate complex APIs into a user-friendly interface. The dashboard provides real-time data insights with an emphasis on clarity and usability.</p>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-builds" id="quick-builds">
+        <div class="container">
+            <h2>Quick Builds</h2>
+            <p>Explore my collection of streamlined projects designed to solve specific challenges efficiently. These projects showcase my ability to deliver high-quality results on a smaller scale, perfect for fast implementation and immediate impact.</p>
+            <div class="quick-builds-list">
+                <article class="quick-build-card">
+                    <img src="quick-build1-thumbnail.jpg" alt="Quick Build 1 screenshot">
+                    <div class="quick-build-info">
+                        <h3>Responsive Landing Page</h3>
+                        <p>A clean, mobile-friendly landing page that highlights essential information with a focus on conversions.</p>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+                <article class="quick-build-card">
+                    <img src="quick-build2-thumbnail.jpg" alt="Quick Build 2 screenshot">
+                    <div class="quick-build-info">
+                        <h3>Interactive Form</h3>
+                        <p>An intuitive, user-centered form design that simplifies data collection while enhancing user experience.</p>
+                        <a href="#" class="btn btn-small">View Project</a>
+                    </div>
+                </article>
+            <!-- Additional Quick Builds can be added here -->
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Let’s Create Something Amazing</h2>
+            <p>Ready to take your digital presence to the next level? Whether you're starting from scratch or need to revamp an existing project, I’m here to help you achieve your goals. Let's work together to create something that stands out and delivers real results.</p>
+            <a href="mailto:joaopedro@example.com" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 @jpcardozx. All rights reserved. Crafted with care and precision by João Pedro Cardoso de Melo de Paula.</p>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
